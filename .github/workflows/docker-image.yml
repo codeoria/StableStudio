@@ -17,6 +17,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: list 1
+      run: ls -al
     - name: Set Node.js 18
       uses: actions/setup-node@v3
       with:
@@ -29,6 +31,10 @@ jobs:
       uses: borales/actions-yarn@v4
       with:
         cmd: build # will run `yarn build:prod` command
+    
+    - name: list 1
+      run: ls -al
+      
     - name: Docker Login
       uses: docker/login-action@v2.2.0
       with:
