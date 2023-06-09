@@ -44,4 +44,4 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: ${{secrets.REGISTRY_USERNAME}}/${{env.IMAGE}}:latest
+        tags: ${{secrets.REGISTRY_USER}}/${{env.IMAGE}}:latest
