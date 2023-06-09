@@ -1,6 +1,5 @@
-FROM node:alpine as builder
+FROM alpine
 
-RUN yarn install
+copy build /app
 
-RUN yarn build
 
