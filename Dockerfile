@@ -4,7 +4,7 @@ RUN apk add git
 COPY . /app
 WORKDIR /app
 EXPOSE 3000
-CMD ["yarn", "dev"]
+CMD ["/bin/sh", "start.sh"]
 
 
 
